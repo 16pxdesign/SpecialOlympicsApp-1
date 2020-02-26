@@ -12,10 +12,10 @@
 class Database extends PDO
 {
     private $_driver = 'mysql';
-    private $_host = '';
-    private $_user = '';
-    private $_password = '';
-    private $_database = '';
+    private $_host = 'lochnagar.abertay.ac.uk';
+    private $_user = 'sqlcmp311gc1904';
+    private $_password = 'euJp9u2XMmSc';
+    private $_database = 'sqlcmp311gc1904';
     private $_char = 'utf8';
     private $_dsn = null;
     public function __construct()
