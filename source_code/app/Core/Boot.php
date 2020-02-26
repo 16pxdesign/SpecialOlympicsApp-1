@@ -51,8 +51,7 @@ class Boot
         //Import controller or show error
         $file = DOCROOT . '/app/Controller/' . $controller . '.php';
         if (file_exists($file)) {
-            $session = new Session();
-            $this->_controller = new $controller($session);
+            $this->_controller = new $controller();
 
         } else {
             //404 - controller not found
