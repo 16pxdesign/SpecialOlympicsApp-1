@@ -18,6 +18,7 @@ class Index extends Controller
         $this->_view->render('shared/html_header');
         $this->_view->render('shared/header');
         $this->_view->render('index/index');
+        $this->_view->render('shared/footer');
     }
 
 }
