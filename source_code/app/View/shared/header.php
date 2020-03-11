@@ -1,3 +1,9 @@
+<!--
+    *Footer
+    *@author     Denis Suserts
+    *@edit     Aleksy Ruszala
+-->
+
 <script>
     $(function () {
 
