@@ -9,10 +9,6 @@
 </script>
 <style>
 
-    body{
-        background-color: red;
-    }
-
     .animate {
         -webkit-transition: all 0.3s ease-in-out;
         -moz-transition: all 0.3s ease-in-out;
@@ -21,15 +17,11 @@
         transition: all 0.3s ease-in-out;
     }
 
-    .navbar{
+    .navbar {
         padding: 0;
 
     }
-    .dump_navbar{
-        min-height: 60px;
-        display: block;
-        padding: 0;
-    }
+
     .navbar > .toggle {
         position: absolute;
         display: block;
@@ -97,7 +89,7 @@
         padding: 0;
         list-style: none;
         z-index: 50;
-        background-color: rgba(51, 51, 51,1);
+        background-color: rgba(51, 51, 51, 1);
     }
 
     .navbar-minimal > .navbar-menu > li {
@@ -158,7 +150,6 @@
 
     <a class="navbar-brand" href="#">Navbar</a>
 
-    <div class="dump_navbar"></div>
 
     <nav class="toggle navbar-fixed-left navbar-minimal animate" role="navigation">
         <div class="navbar-toggler animate">
