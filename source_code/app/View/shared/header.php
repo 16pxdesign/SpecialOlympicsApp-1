@@ -140,11 +140,15 @@
         overflow: visible;
     }
 
+    .logo {
+        height: 50px;
+        margin-left: 25px;
+    }
 </style>
 
 <nav class="navbar navbar-light bg-dark border-danger">
 
-    <a class="navbar-brand" href="#">Navbar</a>
+    <a class="navbar-brand" href="#"><img class="logo" src="./images/logo.png"></a>
 
 
     <nav class="toggle navbar-fixed-left navbar-minimal animate" role="navigation">
