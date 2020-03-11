@@ -15,6 +15,8 @@ class Index extends Controller
     }
     public function index()
     {
+        $this->_view->render('shared/html_header');
+        $this->_view->render('shared/header');
         $this->_view->render('index/index');
     }
 
