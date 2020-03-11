@@ -23,7 +23,6 @@
     }
 
     .navbar > .toggle {
-        position: absolute;
         display: block;
         padding: 0;
         z-index: 10000;
@@ -54,10 +53,6 @@
         border-radius: 0;
     }
 
-    .navbar-minimal.open > .navbar-toggler,
-    .navbar-minimal > .navbar-toggler:hover {
-        background-color: #9ECA3B;
-    }
 
     .navbar-minimal > .navbar-toggler > .menu-icon {
         position: absolute;
@@ -125,7 +120,8 @@
     }
 
     .navbar-minimal.open {
-        width: 320px;
+        background-color: #9ECA3B;
+        width: 60px;
     }
 
     .navbar-minimal.open > .navbar-toggler > span {
