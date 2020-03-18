@@ -1,21 +1,24 @@
+<!--
+    *Footer
+    *@author     Denis Suserts
+    *@edit     Aleksy Ruszala
+-->
+
 <style>
     .article{
         font-family: "Times New Roman", Times, serif;
         font-size: 1em;
     }
-    .article-picture > img{
-        width: 100%;
-        max-height: 1em ;
-    }
+
     .article-title{
         text-align: center;
     }
 
 </style>
 
-<div class="container article">
+<div class="article p-3">
     <div class="article-picture">
-        <img src="testPig.webp" alt="Piglet" >
+        <img class="w-100 h-25" src="/~cmp311gc1904/images/slider/slider1.jpg" alt="Piglet" >
     </div>
     <div class="article-title">
         <h1>Article title to be changed to automation</h1>
