@@ -4,7 +4,7 @@
 -->
 <style>
     .h-slide{
-        height: 30%;
+        height: 35%;
     }
 </style>
 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
