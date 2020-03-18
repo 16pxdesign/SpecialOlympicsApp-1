@@ -154,7 +154,7 @@
 
 <nav class="navbar navbar-light bg-dark border-danger">
 
-    <a class="navbar-brand" href="/~cmp311gc1904/"><img class="logo" src="./images/logo.png"></a>
+    <a class="navbar-brand" href="/~cmp311gc1904/"><img class="logo" src="/~cmp311gc1904/images/logo.png"></a>
 
 
     <nav class="toggle navbar-fixed-left navbar-minimal animate" role="navigation">
