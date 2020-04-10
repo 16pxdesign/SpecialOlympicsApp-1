@@ -6,21 +6,16 @@
  * @copyright  2020 Aleksy Ruszala
  */
 
-class CategoryModel extends Model
+class MsgsModel extends Model
 {
     public function __construct()
     {
         parent::__construct();
     }
 
-    public function getAll(){
-        $sql = "SELECT * FROM CategoryModel";
-        return $this->db->run($sql);
-    }
-
-    public function getArticleList($id)
+    public function getMsgs()
     {
-        $sql = "SELECT id, title FROM ArticleSO where CategoryID = ".$id;
+        $sql = "SELECT * FROM AmbassadorMSG";
         return $this->db->run($sql);
     }
 

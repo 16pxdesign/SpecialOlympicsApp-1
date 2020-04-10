@@ -13,4 +13,31 @@ class ArticleModel extends Model
     {
         parent::__construct();
     }
+
+    public function getArticle($id)
+    {
+        if($id!=null){
+            $sql = "SELECT * FROM ArticleSO where id = ".$id;
+            return $this->db->run($sql);
+        }
+        return null;
+    }
+
+    public function getMessage($id)
+    {
+        if($id!=null){
+            $sql = "SELECT id as ID, message as Body, title as Title FROM AmbassadorMSG where id = ".$id;
+            return $this->db->run($sql);
+        }
+        return null;
+    }
+
+    public function getArticleImages($id)
+    {
+        if($id!=null){
+            $sql = "SELECT * FROM ImageSO where ArticleID = ".$id;
+            return $this->db->run($sql);
+        }
+        return null;
+    }
 }

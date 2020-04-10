@@ -12,7 +12,7 @@
     footer {
         position: fixed;
         background: #002147;
-        height: 60px;
+        height: 70px;
         width: 100%;
         box-sizing: content-box;
     }
@@ -33,16 +33,22 @@
         font-size: 3em;
     }
     .fa-10x{
-        font-size: 3.5em;
+        font-size: 4em;
+    }
+    .fa-5x{
+        font-size: 2.5em;
+    }
+    .px5{
+       padding-right: 4rem!important;
+       padding-left: 4rem!important;
     }
 </style>
 
 
 <footer>
         <div class="container d-flex justify-content-center align-items-center ">
-            <a  href="http://google.com"><i class="material-icons p-1">question_answer</i></a>
-            <a  href="http://google.com"><i class="material-icons p-1">camera_alt</i></a>
-            <a  href="http://google.com"><i class="fa fa-qrcode fa-10x p-1"></i></a>
-            <a  href="http://google.com"><i class="material-icons p-1">email</i></a>
+            <a  href="/~cmp311gc1904/Index/about"><i class="material-icons p-1 px5 fa-5x">emoji_people</i></a>
+            <a  href="/~cmp311gc1904/QR"><i class="fa fa-qrcode fa-10x p-1"></i></a>
+            <a  href="/~cmp311gc1904/Index/contact"><i class="material-icons fa-5x p-1 px5">email</i></a>
         </div>
 </footer>

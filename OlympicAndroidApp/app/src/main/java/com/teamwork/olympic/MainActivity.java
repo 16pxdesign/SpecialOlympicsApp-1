@@ -47,11 +47,10 @@ public class MainActivity extends AppCompatActivity {
 
     private static final String TAG = "alex";
     private WebView webView;
-    //private String path = "";
-    private String path = "";
+    private String path = "/~cmp311gc1904/";
     //private String host = "google.com";
-    private String host = "https://mayar.abertay.ac.uk/~cmp311gc1904/";
-    private String protocol = "";
+    private String host = "mayar.abertay.ac.uk";
+    private String protocol = "https://";
     String[] urlComponents = {protocol, host, path};
     private String url = TextUtils.join("", urlComponents);
 
@@ -276,9 +275,12 @@ public class MainActivity extends AppCompatActivity {
         @Override
         public boolean shouldOverrideUrlLoading(WebView view, String url) {
 
+            Log.d("mylog", "myWebClient shouldOverrideUrlLoading: " + Uri.parse(url).getHost());
+
             if (Uri.parse(url).getHost().equals(host)) {
             //if (true) {
                 // This is my web site, so do not override; let my WebView load the page
+                Log.d("mylog", "myWebClient shouldOverrideUrlLoading: equals host");
                 return false;
             }
             // Otherwise, the link is not for a page on my site, so launch another Activity that handles URLs

@@ -6,21 +6,21 @@
  * @copyright  2020 Aleksy Ruszala
  */
 
-class CategoryModel extends Model
+class IndexModel extends Model
 {
     public function __construct()
     {
         parent::__construct();
     }
 
-    public function getAll(){
-        $sql = "SELECT * FROM CategoryModel";
+    public function getCategories(){
+        $sql = "SELECT * FROM Category";
         return $this->db->run($sql);
     }
 
-    public function getArticleList($id)
+    public function getSliderPhotos()
     {
-        $sql = "SELECT id, title FROM ArticleSO where CategoryID = ".$id;
+        $sql = "SELECT * FROM Slider";
         return $this->db->run($sql);
     }
 

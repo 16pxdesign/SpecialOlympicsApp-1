@@ -118,7 +118,7 @@
     }
 
     .navbar-minimal > .navbar-menu > li > a:hover {
-        background-color: rgb(158, 202, 59);
+        background-color: #428bca;
     }
 
     .navbar-minimal > .navbar-menu > li > a > .icon-lib {
@@ -126,7 +126,7 @@
     }
 
     .navbar-minimal.open {
-        background-color: #9ECA3B;
+        background-color: #428bca;
         width: 60px;
     }
 
@@ -162,24 +162,17 @@
             <span class="menu-icon"></span>
         </div>
         <ul class="navbar-menu animate">
-            <li>
-                <a href="#" class="animate">
-                    <span class="desc animate"> Who We Are </span>
+            <?php
+            foreach ($data as $item){
+                echo '  <li>
+                <a href="/~cmp311gc1904/' . $item["url"] . '" class="animate">
+                    <span class="desc animate"> ' . $item["name"] . ' </span>
                     <span class="icon-lib icon-lib-user"></span>
                 </a>
-            </li>
-            <li>
-                <a href="https://google.com" class="animate">
-                    <span class="desc animate"> What We Say </span>
-                    <span class="icon-lib icon-lib-info-sign"></span>
-                </a>
-            </li>
-            <li>
-                <a href="#" class="animate">
-                    <span class="desc animate"> How To Reach Us </span>
-                    <span class="icon-lib icon-lib-comment"></span>
-                </a>
-            </li>
+            </li>';
+            }
+            ?>
+
         </ul>
     </nav>
 
