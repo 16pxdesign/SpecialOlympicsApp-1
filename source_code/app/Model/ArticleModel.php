@@ -40,4 +40,13 @@ class ArticleModel extends Model
         }
         return null;
     }
+
+    public function getMessageImages($id)
+    {
+        if($id!=null){
+            $sql = "SELECT * FROM ImageSO where msgID = ".$id;
+            return $this->db->run($sql);
+        }
+        return null;
+    }
 }

@@ -2,6 +2,7 @@
     *Footer
     *@author     Denis Suserts
     *@edit     Aleksy Ruszala
+    *@version 2.0
 -->
 
 <script>

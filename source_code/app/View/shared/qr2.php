@@ -1,3 +1,12 @@
+<!--
+    *QR Reader
+
+    *Powered by Instascan Copyright © 2016 Chris Schmich
+    *https://github.com/schmich/instascan/blob/master/README.md
+
+    *@edit     Aleksy Ruszala
+    *@version 2.0
+-->
 
 <?php
 
@@ -43,7 +52,7 @@
 
 <article class="pad-2">
     <section id="qr" class="hidden">
-        <!-- webcamera view component -->
+        <!-- camera view component -->
         <video id="webcameraPreview" playsinline autoplay muted loop style="width: 100%;"></video>
     </section>
 </article>

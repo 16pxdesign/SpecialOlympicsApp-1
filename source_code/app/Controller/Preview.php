@@ -27,7 +27,7 @@ class Preview extends Controller
         $data["article"] = $article[0];
         $data["media"] = $this->_model->getArticleImages($id);
         if($article!=null)
-        $this->_view->render('shared/article', $data);
+        $this->_view->render('shared/article2', $data);
         $this->_view->render('shared/footer');
         $this->_view->render('shared/html_footer');
     }
@@ -40,9 +40,11 @@ class Preview extends Controller
         $article = $this->_model->getMessage($id);
         if($article!=null)
             $data["article"] = $article[0];
-        $data["media"] = null;
+        $data["media"] = $this->_model->getMessageImages($id);
+
+
         if($article!=null)
-            $this->_view->render('shared/article', $data);
+            $this->_view->render('shared/article2', $data);
         $this->_view->render('shared/footer');
         $this->_view->render('shared/html_footer');
     }

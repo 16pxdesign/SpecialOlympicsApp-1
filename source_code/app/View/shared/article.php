@@ -2,6 +2,7 @@
     *Footer
     *@author     Denis Suserts
     *@edit     Aleksy Ruszala
+    *@version 2.0
 -->
 
 <style>
@@ -15,12 +16,12 @@
     }
 
 </style>
-<div class="article p-3">
-    <div class="article-picture">
+<div class="container ">
+    <div class="row article-picture">
         <?php
         if ($data["media"] != null) {
             foreach ($data["media"] as $item) {
-                echo '<img class="w-100 h-25" src="/~cmp311gc1904/images/articles/' . $item["Image"] . '" alt="' . $item["Name"] . '" >';
+                echo '<img class="" src="' . $item["Image"] . '" alt="' . $item["Name"] . '" >';
             }
         }
         ?>

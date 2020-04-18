@@ -1,6 +1,7 @@
 <!--
  * Contact
  * @author     Aleksy Ruszala and Denis Suserts
+ *@version 1.0
 -->
 <style>
     .h-slide{

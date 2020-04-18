@@ -1,10 +1,11 @@
 <!--
  * Contact
  * @author     Lewis Mckaig
+ *@version 1.0
 -->
 <div class="container">
 
-    <form class="p-3" action="" method="post">
+    <form class="p-3" action="../Index/send" method="post">
 
         <div class="form-group col-sm-8 offset-sm-2">
             <label for="email">Your Email:</label>

@@ -40,8 +40,21 @@ class Index extends Controller
     public function about(){
         $this->_view->render('shared/html_header');
         $this->_view->render('shared/header', $this->_navModel->getAll());
-        echo "TODO about";
-        //$this->_view->render('shared/contactus');
+        $this->_view->render('shared/map');
+        $this->_view->render('shared/footer');
+        $this->_view->render('shared/html_footer');
+    }
+    public function send(){
+        $this->_view->render('shared/html_header');
+        $this->_view->render('shared/header', $this->_navModel->getAll());
+        if(!empty($_POST) && !empty($_POST["email"]) && !empty($_POST["message"])) {
+            mail("16pxdesign@gmail.com", "Message from Olympics App contact form", $_POST["message"],  'CC: '. $_POST["email"]);
+            echo "Message sent. We will replay shortly.";
+        }elseif (empty($_POST["message"])){
+            echo "Error: Message empty.";
+        }else{
+            echo "Error: Message not sent. Please try again";
+        }
         $this->_view->render('shared/footer');
         $this->_view->render('shared/html_footer');
     }
